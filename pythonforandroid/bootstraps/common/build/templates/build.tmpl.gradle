@@ -6,6 +6,7 @@ buildscript {
     }
     dependencies {
         classpath 'com.android.tools.build:gradle:8.1.1'
+	classpath 'com.google.gms.google-services:4.4.0'
     }
 }
 
@@ -23,6 +24,7 @@ allprojects {
 apply plugin: 'com.android.library'
 {% else %}
 apply plugin: 'com.android.application'
+aplly plugin: 'com.google.gms.google-services'
 {% endif %}
 
 android {
@@ -109,6 +111,7 @@ android {
 }
 
 dependencies {
+    implementation platform('com.google.firebase:firebase-bom:32.7.0')
     {%- for aar in aars %}
     implementation(name: '{{ aar }}', ext: 'aar')
     {%- endfor -%}

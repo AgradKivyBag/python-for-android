@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "905430844632",
+    "project_id": "mob-emp",
+    "storage_bucket": "mob-emp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:905430844632:android:1ea2a36cf0e617538983ad",
+        "android_client_info": {
+          "package_name": "com.autograd.ag_emp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDRBfl6EozyhrcS53PePEj3O3QlkaMaPHU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

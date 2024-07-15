@@ -45,7 +45,7 @@ testapps-with-numpy/%: virtualenv
 	@echo Building testapps-with-numpy for $(MODE) mode and $(ARTIFACT) artifact
 	. $(ACTIVATE) && cd testapps/on_device_unit_tests/ && \
     python setup.py $(ARTIFACT) --$(MODE) --sdk-dir $(ANDROID_SDK_HOME) --ndk-dir $(ANDROID_NDK_HOME) \
-    --requirements libffi,sdl2,pyjnius,kivy,python3,openssl,requests,urllib3,chardet,idna,sqlite3,setuptools,numpy \
+    --requirements libffi,sdl2,pyjnius,kivy,python3,openssl,requests,urllib3,chardet,idna,setuptools,numpy \
     --arch=armeabi-v7a --arch=arm64-v8a --arch=x86_64 --arch=x86 \
 	--permission "(name=android.permission.WRITE_EXTERNAL_STORAGE;maxSdkVersion=18)" --permission "(name=android.permission.INTERNET)"
 
@@ -72,7 +72,7 @@ testapps-webview/%: virtualenv
 	. $(ACTIVATE) && cd testapps/on_device_unit_tests/ && \
     python setup.py $(ARTIFACT) --$(MODE) --sdk-dir $(ANDROID_SDK_HOME) --ndk-dir $(ANDROID_NDK_HOME) \
     --bootstrap webview \
-    --requirements sqlite3,libffi,openssl,pyjnius,flask,python3,genericndkbuild \
+    --requirements libffi,openssl,pyjnius,flask,python3,genericndkbuild \
     --arch=armeabi-v7a --arch=arm64-v8a --arch=x86_64 --arch=x86
 
 testapps-service_library-aar: virtualenv 

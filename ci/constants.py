@@ -50,6 +50,6 @@ BROKEN_RECIPES = {
 }
 # recipes that were already built will be skipped
 CORE_RECIPES = set([
-    'pyjnius', 'kivy', 'openssl', 'requests', 'sqlite3', 'setuptools',
+    'pyjnius', 'kivy', 'openssl', 'requests', 'setuptools',
     'numpy', 'android', 'hostpython3', 'python3',
 ])
